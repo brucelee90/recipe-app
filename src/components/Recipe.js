@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 
 export default class Recipe extends Component {
   render() {
@@ -14,6 +15,7 @@ export default class Recipe extends Component {
     return (
         <React.Fragment>
             <div className="col-10 mx-auto col-md-6 col-lg-4 my-3">
+            <CardWrapper>
                 <div className="card">
                     <img 
                     src={image_url} 
@@ -26,7 +28,7 @@ export default class Recipe extends Component {
                             {title}
                         </h6>
                         <h6 className="text-warning text-slanted">
-                            provided by {publisher}
+                            von: {publisher}
                         </h6>
                         <div className="card-footer">
                             <button 
@@ -42,7 +44,7 @@ export default class Recipe extends Component {
                             target="_blank"
                             rel="noopener noreferrer"
                             role="button">
-                                recipe url
+                                webseite
                                 <i 
                                 style={{marginLeft: "5px", fontSize: ".9rem"}}
                                 className="fas fa-external-link-alt"></i>
@@ -50,8 +52,14 @@ export default class Recipe extends Component {
                         </div>
                     </div>
                 </div>
+                </CardWrapper>
             </div>
         </React.Fragment>
     )
   }
 }
+
+const CardWrapper = styled.div`
+
+
+`

@@ -5,3 +5,70 @@ body{
 .text-slanted{
   font-family: 'Raleway'
 }
+
+/* Buttons */
+.btn{
+  margin: 0 1rem .5rem 0!important;
+  border: none;
+  border-radius: 3px;
+}
+
+.btn-primary{
+  background: #51768C;
+}
+.btn-primary:hover{
+  background: #435964;
+}
+
+
+.btn-success{
+  background: #51768C;
+  color: white;
+}
+.btn-success:hover{
+  background: #435964;
+}
+
+
+.btn-warning{
+  background: #95A8A2;
+  color: white;
+}
+.btn-warning:hover{
+  background: #65897f;
+  color: white;
+}
+
+/* Text */
+.text-warning{
+  color:#EE7560!important;
+}
+
+.input-group-text{
+  background: black!important;
+}
+.input-group-text:hover{
+  background: black!important;
+}
+
+.outline{
+  border-right: 1px solid #51768C;
+  border-top: 1px solid #51768C;
+  border-bottom: 1px solid #51768C;
+}
+.outline:hover{
+  border-right: 1px solid #435964;
+  border-top: 1px solid #435964;
+  border-bottom: 1px solid #435964;
+}
+
+
+*:focus {
+  outline: none!important;
+  box-shadow: none!important;
+  border: 1px solid #51768C!important;
+}
+
+.card-footer{
+  background: white;
+}

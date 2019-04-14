@@ -10,11 +10,11 @@ export default class RecipeSearch extends Component {
                 <div className="row">
                     <div className="col-10 mx-auto col-md mt-5 text-center">
                         <h1 className="text-slanted text-capitalize">
-                            search for recipe with <strong className="text-danger">Food2Fork</strong>
+                            Suchen Sie nach allen Rezepten mit <strong className="text-warning">Food2Fork</strong>
                         </h1>
                         <form onSubmit={handleSubmit} className="mt-4">
                             <label htmlFor="search" className="text-capitalize">
-                                type recipe seperated by comma
+                                Suchen sie nach Rezepten (nur auf englisch)
                             </label>
                             <div className="input-group">
                                 <input
@@ -25,9 +25,10 @@ export default class RecipeSearch extends Component {
                                 onChange={handleChange}
                                 />
                                 <div className="input-group-append">
+
                                     <button
                                     type="submit"
-                                    className="input-group-text bg-primary text-white"
+                                    className="btn btn-primary outline"
                                     >
                                         <i className="fas fa-search"></i>
                                     </button>
